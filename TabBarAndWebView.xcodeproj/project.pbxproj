@@ -8,24 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		0F74E139216865EB00DE344C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F74E138216865EB00DE344C /* AppDelegate.m */; };
-		0F74E13C216865EB00DE344C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F74E13B216865EB00DE344C /* ViewController.m */; };
 		0F74E13F216865EB00DE344C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F74E13D216865EB00DE344C /* Main.storyboard */; };
 		0F74E141216865EE00DE344C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F74E140216865EE00DE344C /* Assets.xcassets */; };
 		0F74E144216865EE00DE344C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F74E142216865EE00DE344C /* LaunchScreen.storyboard */; };
 		0F74E147216865EE00DE344C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F74E146216865EE00DE344C /* main.m */; };
+		0F74E14F21687A0700DE344C /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F74E14E21687A0600DE344C /* WebKit.framework */; };
+		0F74E15121687CF800DE344C /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = 0F74E15021687CF800DE344C /* about.html */; };
+		0F74E15421687D8300DE344C /* WebViewControllerClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F74E15321687D8300DE344C /* WebViewControllerClass.m */; };
+		0F74E1562168864B00DE344C /* digi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F74E1552168864B00DE344C /* digi.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0F74E134216865EA00DE344C /* TabBarAndWebView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabBarAndWebView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F74E137216865EB00DE344C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0F74E138216865EB00DE344C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0F74E13A216865EB00DE344C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0F74E13B216865EB00DE344C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0F74E13E216865EB00DE344C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0F74E140216865EE00DE344C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F74E143216865EE00DE344C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F74E145216865EE00DE344C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F74E146216865EE00DE344C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0F74E14E21687A0600DE344C /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		0F74E15021687CF800DE344C /* about.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = about.html; path = ../about/about.html; sourceTree = "<group>"; };
+		0F74E15221687D8300DE344C /* WebViewControllerClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewControllerClass.h; sourceTree = "<group>"; };
+		0F74E15321687D8300DE344C /* WebViewControllerClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewControllerClass.m; sourceTree = "<group>"; };
+		0F74E1552168864B00DE344C /* digi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = digi.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F74E14F21687A0700DE344C /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,8 +49,11 @@
 		0F74E12B216865E900DE344C = {
 			isa = PBXGroup;
 			children = (
+				0F74E1552168864B00DE344C /* digi.jpg */,
+				0F74E15021687CF800DE344C /* about.html */,
 				0F74E136216865EA00DE344C /* TabBarAndWebView */,
 				0F74E135216865EA00DE344C /* Products */,
+				0F74E14D21687A0600DE344C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,15 +70,23 @@
 			children = (
 				0F74E137216865EB00DE344C /* AppDelegate.h */,
 				0F74E138216865EB00DE344C /* AppDelegate.m */,
-				0F74E13A216865EB00DE344C /* ViewController.h */,
-				0F74E13B216865EB00DE344C /* ViewController.m */,
 				0F74E13D216865EB00DE344C /* Main.storyboard */,
 				0F74E140216865EE00DE344C /* Assets.xcassets */,
 				0F74E142216865EE00DE344C /* LaunchScreen.storyboard */,
 				0F74E145216865EE00DE344C /* Info.plist */,
 				0F74E146216865EE00DE344C /* main.m */,
+				0F74E15221687D8300DE344C /* WebViewControllerClass.h */,
+				0F74E15321687D8300DE344C /* WebViewControllerClass.m */,
 			);
 			path = TabBarAndWebView;
+			sourceTree = "<group>";
+		};
+		0F74E14D21687A0600DE344C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F74E14E21687A0600DE344C /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +146,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F74E1562168864B00DE344C /* digi.jpg in Resources */,
+				0F74E15121687CF800DE344C /* about.html in Resources */,
 				0F74E144216865EE00DE344C /* LaunchScreen.storyboard in Resources */,
 				0F74E141216865EE00DE344C /* Assets.xcassets in Resources */,
 				0F74E13F216865EB00DE344C /* Main.storyboard in Resources */,
@@ -141,8 +161,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F74E13C216865EB00DE344C /* ViewController.m in Sources */,
 				0F74E147216865EE00DE344C /* main.m in Sources */,
+				0F74E15421687D8300DE344C /* WebViewControllerClass.m in Sources */,
 				0F74E139216865EB00DE344C /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
